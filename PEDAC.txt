@@ -1,0 +1,37 @@
+***PROBLEM***
+- Create a game where the player thinks of a number between 1 and 1024
+and the computer guesses it. 
+
+***EXAMPLE***
+My guess is 1. Is your number HIGHER, LOWER, or am I CORRECT? HIGHER
+
+Ok, higher.
+
+My guess is 2. Is your number HIGHER, LOWER, or am I CORRECT? HIGHER
+
+Ok, higher.
+
+My guess is 3. Is your number HIGHER, LOWER, or am I CORRECT? CORRECT
+
+***DATA STRUCTURES***
+`string`
+`loop`
+`int`
+`boolean`
+
+***ALGORITHM***
+1. Display greeting to the user:
+   a. "I am the magical number guesser. Think of a number 
+       between 1 and 1024 and I will guess your number. Are you ready to play?"
+2. Ask user to think of a number between 1 and 1024
+   a. "Think of a number between 1 and 1024"
+3. Guess the median number between 1 and 1024: 512. 
+4. Ask user if their number is higher, lower, or correct. 
+   a. if higher, guess median of number guessed (512) and the highest number (1024)
+      1. (512 + 1024) / 2 = median number and new guess.
+   b. if lower, guess median of number guessed and lowest number (1)
+      1. 512 / 2 = median number and new guess
+   c. if correct, display end of game message:
+      1. "I told you I'd guess your number! "
+5. Repeat step 4, until 4c occurs. 
+
